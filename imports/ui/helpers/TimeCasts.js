@@ -1,5 +1,6 @@
 // Date Helpers
 
+var self =
 module.exports = {
 
     getDaysInMonth: function (month,year) {
@@ -20,7 +21,7 @@ module.exports = {
         if( md < 0) {yd--; md += 12;}
         if( dd < 0) {
             md--;
-            dd += getDaysInMonth(now.getMonth()-1,now.getFullYear());
+            dd += self.getDaysInMonth(now.getMonth()-1,now.getFullYear());
         }
         if( hd < 0) {dd--; hd += 24;}
         if( md < 0) {hd--; md += 60;}
