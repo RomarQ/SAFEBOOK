@@ -186,7 +186,7 @@ export default class Messages extends TrackerReact( React.Component ) {
             return (
                 <div>
                 { loggedIn ? (
-                    <Grid celled='internally' style={{ marginTop: 10 }}>
+                    <Grid celled='internally' style={{ marginTop: '10px', marginBottom:'50px' }}>
                     <Grid.Column width={11}>
                         { !Session.get('p_key') ? (
                             <Container textAlign='center'>
